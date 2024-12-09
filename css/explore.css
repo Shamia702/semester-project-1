@@ -81,7 +81,6 @@
         position: absolute;
         width: 100vw;
         height: 20vh;
-        background-image: url('../images/explore-header.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -100,6 +99,28 @@
         background: conic-gradient(from 180deg at 50% 50%, rgba(21, 11, 47, 0.61) 0deg, rgba(44, 23, 98, 0.61) 180deg, rgba(67, 35, 149, 0.61) 360deg);
         z-index: 0; 
     }
+
+    .explore-page header{
+        background-image: url('../images/explore-header.jpg');
+    }
+
+    .contact-page header{
+        background-image:url("/images/contact-header.jpg");
+    }
+
+    .events-page header, .exhibits-page header{
+        background-image: url("/images/exhibit-event-header.jpg");
+    }
+
+    .join-page header{
+        background-image: url("/images/join+give-header.jpeg");
+    }
+
+    .visit-page header{
+        background-image: url("/images/visit-header.jpg");
+    }
+
+
     
     .header-content{
         color: white;
@@ -111,6 +132,7 @@
     
     h1{
         font-size: 4vmin;
+        text-align: center;
     }
     
     .hero-cta{
@@ -196,7 +218,6 @@
         position: absolute;
         width: 100vw;
         height: 30vh;
-        background-image: url('../images/explore-header.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -215,6 +236,27 @@
         background: conic-gradient(from 180deg at 50% 50%, rgba(21, 11, 47, 0.61) 0deg, rgba(44, 23, 98, 0.61) 180deg, rgba(67, 35, 149, 0.61) 360deg);
         z-index: 0; 
     }
+
+    .explore-page header{
+        background-image: url('../images/explore-header.jpg');
+    }
+
+    .contact-page header{
+        background-image:url("/images/contact-header.jpg");
+    }
+
+    .events-page header, .exhibits-page header{
+        background-image: url("/images/exhibit-event-header.jpg");
+    }
+
+    .join-page header{
+        background-image: url("/images/join+give-header.jpeg");
+    }
+
+    .visit-page header{
+        background-image: url("/images/visit-header.jpg");
+    }
+
     
     .header-content{
         color: white;
