@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2ae4b67056.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
-    <div class="exhibits-page">
-    <nav class="navbar">
+    <header class="exhibits-page">
+        <nav class="navbar">
         <a href="index.html">
             <img src="images/website-logo.png" alt="logo of community science museum" class="logo">
         </a> 
         <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label> 
+        
         <ul class="nav-links"> 
         <li><a href="explore.html">Explore</a></li>
         <li><a href="exhibits.html">Exhibits</a></li>
@@ -23,29 +23,37 @@
         <li><a href="visit.html">Visit</a></li>
         <li><a href="join+give.html">Join + Give</a></li>
         <li><a href="contact-us.html">Contact Us</a></li>
-       </ul>
+        </ul>
+    
+       <label for="menu-checkbox" class="menu-open"><i class="fa-solid fa-bars"></i></label>  
+       <label for="menu-checkbox" class="menu-close"><i class="fa-solid fa-xmark"></i></label>
     </nav>
     <div class="navbar-line"></div>
-    <header>
+    <section class="hero-section">
         <div class="header-content">
             <div class="back-btn"><i class="fa-solid fa-arrow-left"></i>
             <a href="explore.html" >Explore</a></div>
-            <h1>What's Here</h1>
-
+            <h1>What's Here?</h1>
+    
         </div>
-    </header>  
+    </section>  
+    </header>
     <main></main>
 
     <footer>
-        <input type="email" id="email" name="email" placeholder="Subscribe to our newsletter">
-        <button> Register</button>
+        <div class="footer-container">
+        <div class="newsletter">
+            <input type="email" id="email" name="email" placeholder="Subscribe to our newsletter">
+            <button class="register"> Register</button>
+        </div>
         <div class="socialmedia-icons">
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
         </div>
+        <div class="line"></div>
     
-        <div>
+        <div class="support-us">
             <h5>Support Us</h5>
             <p>
                 Help us inspire curiosity and learning—your support makes a difference
@@ -54,7 +62,7 @@
             <a href="join+give.html">Donate now</a>
         </div>
     
-        <div>
+        <div class="explore">
              <h5>Explore</h5>
              <a href="visit.html">Plan a visit</a>
              <a href="explore.html">Explore</a>
@@ -62,26 +70,26 @@
              <a href="events.html">Events</a>
         </div>
     
-         <div>
+         <div class="location">
             <h5>Location + Hours</h5>
             <p>Tøyengata 53, 0578 Oslo, Norway</p>
          </div>
     
-         <div>
-            <h6>Open Today</h6>
+         <div class="hours">
+            <h5>Open Today</h5>
             <p>From 10:00  to 16:00 </p>
          </div>
     
-         <div>
+         <div class="copyright">
             <i class="fa-regular fa-copyright"></i>
             <p>2024 Community Science Museum</p>
          </div>
     
-         <div>
+         <div class="policies">
             <p>Privacy Policy</p>
             <p>Terms of use</p>
          </div>
     
-    
-    </footer>
+        </div>
+    </footer> 
 </div>         
