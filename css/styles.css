@@ -169,10 +169,11 @@ body {
         z-index: 0;
        
     }
+    
 
 
     .explore-page .hero-section{
-        background-image: url("images/explore-header.jpg");
+        background-image: url("semester-project-1/images/explore-header.jpg");
     }
 
     .contact-us-page .hero-section{
