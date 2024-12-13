@@ -172,16 +172,17 @@ body {
     
 
 
+
     .explore-page .hero-section{
-        background-image: url("semester-project-1/images/explore-header.jpg");
+        background-image: url("./images/explore-header.jpg");
     }
 
     .contact-us-page .hero-section{
-     background-image: url("../images/contact-header.jpg");
+     background-image: url("images/contact-header.jpg");
     }
 
     .events-page .hero-section, .exhibits-page .hero-section{
-        background-image: url("/images/exhibit-event-header.jpg");
+        background-image: url("../images/exhibit-event-header.jpg");
     }
 
     .join-page .hero-section{
