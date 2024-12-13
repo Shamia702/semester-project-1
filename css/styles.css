@@ -97,7 +97,7 @@ body {
     .contact-form {
        
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 10px;
         padding: 20px;
         max-width: 100%; 
@@ -141,9 +141,8 @@ body {
         margin: 15px 0px;
     }
 
-    .info{
-        margin-top:8px ;
-        margin-bottom: 4px;
+    .info-2{
+        margin-bottom: 5px;
     }
 
     .hero-section{
@@ -168,15 +167,16 @@ body {
         height: 100%;
         background: conic-gradient(from 180deg at 50% 50%, rgba(21, 11, 47, 0.61) 0deg, rgba(44, 23, 98, 0.61) 180deg, rgba(67, 35, 149, 0.61) 360deg);
         z-index: 0;
+       
     }
 
 
     .explore-page .hero-section{
-        background-image: url('../images/explore-header.jpg');
+        background-image: url("/images/explore-header.jpg");
     }
 
     .contact-us-page .hero-section{
-        background-image:url("/images/contact-header.jpg");
+      background-image: url("/images/contact-header.jpg");
     }
 
     .events-page .hero-section, .exhibits-page .hero-section{
@@ -453,7 +453,7 @@ h4{
     width: 90%;
 }
 .card {
-    width: 280px;
+    width: 350px;
     height: 360px;
     position: relative;
     overflow: hidden;
@@ -791,6 +791,10 @@ h4{
     .contact-form {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+
+    .contact-no{
+        margin: 10px;
     }
 
     .departments-container {
