@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Artifika', serif;
+}
+
+
 body {
     font-size: 16px; 
-    background-color: #EBEBEB;
+    background-color: #c0aa8c88;
+    font-family: 'Arsenal', sans-serif;
 }
 
     
@@ -36,6 +42,7 @@ body {
     .nav-links li a, .back-btn a{
         display: inline-block;
         text-decoration: none;
+        font-family: 'Anybody', sans-serif;
         color: #fff;
         position: relative;
         text-align: center;
@@ -103,6 +110,7 @@ body {
         width: 100%;
         border-radius: 10px;
         display: flex;
+        background-color: #c4c2c2;
         justify-content: flex-start;
         align-items: flex-start;
         padding:10px 70px 20px 10px ;
@@ -145,7 +153,6 @@ body {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: url('../images/explore-header.jpg');
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -210,6 +217,7 @@ body {
        position: absolute; 
        bottom: 20px; 
        right: 40px; 
+       font-family: 'Anybody', sans-serif;
         justify-content: center;
         align-items: center;
         background-color: #2CBDC9;
@@ -232,7 +240,7 @@ body {
 
     .intro-section{
         flex-direction: column;
-        margin: 0px;
+        margin: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -240,6 +248,7 @@ body {
     
     .intro-text{
           font-size: 13px;
+          margin: 10px;
     }
 
      
@@ -258,7 +267,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        margin: 0 50px;
     }
 
     .visit-department, .whats-here-department,  .become-member-department{
@@ -284,23 +293,251 @@ body {
         
     }
 
-    .our-mission{
+.mission-container, 
+.science-accessible-container, 
+.kids-container, 
+.teachers-container, 
+.researchers-container, .exhibits-container,
+.events-container, .donate-container,
+.volunteer-container, .member-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto; 
+    margin: 70px auto;
+    flex-wrap: wrap; 
+}
 
-        border: 5px solid red;
-        margin: 10px;
-    }
 
-    .mission-text{
-        font-size: 1.0rem;
-     padding: 10px;
-     word-break: break-word;
-    }
-.mission-img{
-    width: 350px;
+.mission-content, 
+.science-accessible-content, 
+.kids-content, 
+.teachers-content, 
+.researchers-content, .exhibits-content,
+.events-content, .donate-content,
+.volunteer-content {
+    flex: 1;
+    width: 600px; 
+    margin: 0px 25px;
     height: auto;
-    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.mission-content p, 
+.science-accessible-content p, 
+.kids-content p, 
+.teachers-content p, 
+.researchers-content p, .exhibits-content p,
+.events-content p, .donate-content p, .member-content p,
+.volunteer-content p {
+    line-height: 1.5;
+    margin-bottom: 40px;
 
 }
+h6{
+    font-weight: 100;
+   margin: 0;    
+}
+
+p{
+    margin: 0;
+}
+
+h4{
+    font-size: 20px;
+}
+
+
+.mission-img, 
+.science-img, 
+.kids-img, 
+.teachers-img, 
+.researchers-img,
+.donate-img,  .volunteer-img{
+    flex: 1;
+    width: 600px; 
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-img img, 
+.science-img img, 
+.kids-img img, 
+.teachers-img img, 
+.researchers-img img, .donate-img img,.volunteer-img img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.cta-btn{
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    justify-content: center;
+    text-decoration: none;
+        font-family: 'Anybody', sans-serif;
+        padding:15px 20px ;
+        background: #FB8F8F;
+        color: #000;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        border-radius: 10px;  
+        width: 200px;      
+}
+
+.cta-btn:hover{
+    background: rgba(251, 143, 143, 0.72);
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+.member-content {
+    flex: 1; 
+    max-width: 600px; 
+    margin: 0 25px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.member-img {
+    flex: 1; 
+    max-width: 600px; 
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    box-sizing: border-box; 
+}
+
+.member-img img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /
+}
+
+
+
+.science-accessible-content, .teachers-content, .donate-content{
+    order: 2;
+}
+
+.exhibits-content{
+    order: 2;
+    margin-left: 90px;
+    padding: 10px;
+}
+
+/* exhibit page styling */
+.exhibits, .events{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 30px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+}
+.card {
+    width: 280px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cards:hover{
+    transform: translateY(-10px);
+}
+
+.card:hover::before{
+    opacity: 1;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: center; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.card:hover img {
+    opacity: 0.5;
+}
+
+.info {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.info p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.info .btn {
+    background: #fc5185;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+.info .btn:hover {
+    background: #fff;
+    color: #fc5185;
+    transform: scale(1.05);
+}
+
+.wrappers {
+    display: flex;
+    margin: 40px 0px;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.event-visitor{
+    object-fit: cover;
+}
+   
 
 
 
@@ -457,31 +694,36 @@ body {
 
         .navbar{
             padding: 10px;
+            z-index: 3;
         }
 
       .nav-links{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 60%;
-        height: 50%;
+        width: 100%;
+        height: auto;
         position: fixed;
         border-radius: 10px;
-        top: 4%;
+        top: 0;
         right: -100%;
-        z-index: 100;
-        background-color: aquamarine;
+        z-index:100;
+        background-color: rgba(0, 0, 0, 0.425);
         transition: all 0.2s ease-in-out;
+        padding: 10px;
       }
+
+     
 
 
 
       .nav-links li{
         margin-top: 30px;
+
       }
 
       .nav-links li a{
-        padding: 5px;
+        padding: 5px
       }
 
     .menu-open {
@@ -500,17 +742,46 @@ body {
         display: none; 
     }
 
+    .back-btn{
+        margin-top: 25px;
+    }
+
+    .header-content{
+        display: none;
+    }
+
+    .hero-cta{
+        display: none;
+    }
+   
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+
     .footer-container {
-        grid-template-columns: 1fr; 
-        gap: 20px; 
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
-    .newsletter {
-        grid-column: span 1; 
+    .hours, .policies {
+        margin: 0 auto;
+        text-align: center;
     }
 
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+
+    
     .hero-section {
-        height: 30vh;
+        height: 25vh;
     }
 
     .header-content {
@@ -530,13 +801,64 @@ body {
     .visit-department,
     .whats-here-department,
     .become-member-department {
-        width: 80%;
+        width: 100%;
+        height: auto;
     }
+        .mission-container, 
+        .science-accessible-container, 
+        .kids-container, 
+        .teachers-container, 
+        .researchers-container {
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
+        }
+    
+        .mission-content, 
+        .science-accessible-content, 
+        .kids-content, 
+        .teachers-content, 
+        .researchers-content, 
+        .mission-img, 
+        .science-img, 
+        .kids-img, 
+        .teachers-img, 
+        .researchers-img {
+            width: 100%;
+            margin: 0;
+        }
+    
+        .mission-img img, 
+        .science-img img, 
+        .kids-img img, 
+        .teachers-img img, 
+        .researchers-img img {
+            height: auto;
+        }
+
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    
+        .card {
+            width: 70%;
+            height: auto;
+        }
+    
+        .card img {
+            object-fit: cover;
+        }
+    }
+    
+    
+    
    
 
 
 
-    }
+    
 
 
     @media (min-width: 768px) and (max-width: 1023px) {

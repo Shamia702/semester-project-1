@@ -1,0 +1,8 @@
+:root {
+        --font-body: 'Arsenal', sans-serif;
+        --font-headings: 'Artifika', serif;
+        --font-cta: 'Anybody', sans-serif;
+        --cta-button-color: #FB8F8F;
+        --hero-gradient: conic-gradient(from 180deg at 50% 50%, rgba(21, 11, 47, 0.61) 0deg, rgba(44, 23, 98, 0.61) 180deg, rgba(67, 35, 149, 0.61) 360deg);
+}
+    
