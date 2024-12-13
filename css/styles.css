@@ -693,7 +693,9 @@ h4{
 
 
     @media (min-width:300px) and (max-width:767px) {
-
+        body{
+            font-size: 14px;
+        }
         .navbar{
             padding: 10px;
             z-index: 3;
@@ -715,9 +717,15 @@ h4{
         padding: 10px;
       }
 
+      .navbar-line {
+        display: none;
+    }
+
+    .logo{
+        width: 90px;
+        padding: 10px;
      
-
-
+     } 
 
       .nav-links li{
         margin-top: 30px;
@@ -783,20 +791,55 @@ h4{
 
     
     .hero-section {
-        height: 25vh;
-    }
-
-    .header-content {
-        margin: 20px;
+        height: 30vh;
     }
 
     .contact-form {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: 1fr; 
+        gap: 0px;
+        padding: 0px;
+        max-width: 100%; 
+        margin: 20px; 
+        box-sizing: border-box; 
+       
     }
 
+    .contact-us-form input, textarea {
+        width: 100%;
+        border-radius: 10px;
+        padding:9px 0px 10px 9px ;
+        border-radius: 10px;
+        margin:0;
+    } 
+    .submit-btn {
+        margin-left: 0px;
+    }
+
+
     .contact-no{
-        margin: 10px;
+        margin: 0px;
+    }
+
+    h2{
+        margin-bottom: 15px;
+        font-size: 0.95rem;
+    }
+
+    h5{
+        font-size: 12px;
+        margin: 10px 0px;
+    }
+    
+    .contact-no{
+        margin: 0px;
+    }
+
+    .call-us{
+        margin: 0px;
+    }
+
+    .info-2{
+        margin-bottom: 5px;
     }
 
     .departments-container {

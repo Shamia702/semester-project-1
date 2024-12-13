@@ -261,5 +261,211 @@ body {
 
     }
     
+
+    @media (min-width:300px) and (max-width:767px) {
+        body{
+            font-size: 14px;
+        }
+        
+
+        .navbar{
+            padding: 10px;
+            z-index: 3;
+        }
+
+      .nav-links{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        border-radius: 10px;
+        top: 0;
+        right: -100%;
+        z-index:100;
+        background-color: rgba(0, 0, 0, 0.425);
+        transition: all 0.2s ease-in-out;
+        padding: 10px;
+      }
+
+     
+
+
+
+      .nav-links li{
+        margin-top: 30px;
+       
+      }
+
+      .nav-links li a{
+        padding: 5px;
+        font-size: 1rem;
+      }
+
+    .menu-open {
+        display: block;
+    }
+
+    #menu-checkbox:checked ~ .nav-links{
+        right: 0;
+    }
+    
+    #menu-checkbox:checked ~  .menu-close {
+        display: block; 
+    }
+    
+    #menu-checkbox:checked ~ .menu-open {
+        display: none; 
+    }
+
+    .header-content{
+        display: none;
+    }
+
+    .hero-cta{
+        display: none;
+    }
+
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .hours, .policies {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+
+    .socialmedia-icons {
+        justify-content: center;
+    }
+
+    
+    .hero-section {
+        height: 25vh;
+    }
+
+    .header-content {
+        margin: 20px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-no{
+        margin: 10px;
+    }
+
+    .departments-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .visit-department,
+    .whats-here-department,
+    .become-member-department {
+        width: 100%;
+        height: auto;
+    }
+        .mission-container, 
+        .science-accessible-container, 
+        .kids-container, 
+        .teachers-container, 
+        .researchers-container {
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
+        }
+    
+        .mission-content, 
+        .science-accessible-content, 
+        .kids-content, 
+        .teachers-content, 
+        .researchers-content, 
+        .events-content,
+        .exhibits-content
+        .mission-img, 
+        .science-img, 
+        .kids-img, 
+        .teachers-img, 
+        .researchers-img {
+            width: 100%;
+            margin: 0;
+        }
+    
+        .mission-img img, 
+        .science-img img, 
+        .kids-img img, 
+        .teachers-img img, 
+        .researchers-img img {
+            height: auto;
+        }
+
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    
+        .card {
+            width: 70%;
+            height: auto;
+        }
+    
+        .card img {
+            object-fit: center;
+        }
+        .info {
+            position: relative;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 1rem;
+            transform: translateY(30px);
+            opacity: 0;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+    
+        .card:hover .info {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+        .info h2 {
+            font-size: 1.2rem; /* Reduced font size for mobile */
+        }
+    
+        .info p {
+            font-size: 0.85rem;
+        }
+    
+        .info .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+    }
+    
+    
+    
+   
+
         
     
