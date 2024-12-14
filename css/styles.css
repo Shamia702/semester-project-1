@@ -181,8 +181,12 @@ body {
      background-image: url("../images/contact-header.jpg");
     }
 
-    .events-page .hero-section, .exhibits-page .hero-section{
+    .events-page .hero-section {
         background-image: url("../images/exhibit-event-header.jpg");
+    }
+
+    .exhibits-page .hero-section{
+        background-image: url("../images/exhibit-2-header.jpg");
     }
 
     .join-page .hero-section{
@@ -193,6 +197,17 @@ body {
         background-image: url("../images/visit-header.jpg");
     }
 
+    .kids-page .hero-section{
+        background-image: url("../images/kid-header.jpg");
+    }
+
+    .teachers-page .hero-section{
+        background-image: url("../images/teacher-header.jpg");
+    }
+     
+    .index-page .hero-section{
+        background-image: url("../images/index-header.jpg");
+    }
 
     
     .header-content{
@@ -205,6 +220,11 @@ body {
         z-index: 2; 
     }
     
+    .index-heading{
+       padding-top: 20PX;
+       font-size: 3vmin;
+       text-align: left;
+    } 
     h1{
         font-size: 4vmin;
         text-align: center;
@@ -355,13 +375,49 @@ h4{
     font-size: 20px;
 }
 
+.kid-page-container, .teacher-page-container, .researcher-page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.kid-page-content, .teacher-page-content, .researcher-page-content {
+    flex: 1 1 50%;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.kid-page-content p , .teacher-page-content p , .researcher-page-content p{
+    margin: 0;
+    font-size: 20px;
+}
+
+.kid-page-img, .teacher-page-img, .researcher-page-img{
+    flex: 1 1 40%;
+    display: flex;
+    margin: 30px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.kid-page-img img, .teacher-page-img img, .researcher-page-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 .mission-img, 
 .science-img, 
 .kids-img, 
 .teachers-img, 
 .researchers-img,
-.donate-img,  .volunteer-img{
+.donate-img,  .volunteer-img {
     flex: 1;
     width: 600px; 
     height: 300px; 
@@ -940,8 +996,24 @@ h4{
             order: 2;
         }
 
-        .detail{
-            font-size: ;
+        .kid-page-container, .teacher-page-container, .researcher-page-container{
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .kid-page-content, .teacher-page-content, .researcher-page-content{
+            text-align: start;
+            font-size: 16px;
+        }
+    
+        .kid-page-img, .teacher-page-img, .researcher-page-img{
+            width: 100%;
+            margin-top: 20px;
+        }
+    
+        .kid-page-img img, .teacher-page-img img, .researcher-page-img img {
+            max-width: 90%;
+            margin: 0 auto;
         }
     }
 
@@ -1058,6 +1130,8 @@ h4{
             font-size: 0.9rem; 
             padding: 10px; 
         }
+
+        
 
         .footer {
             padding: 15px 10px; 
