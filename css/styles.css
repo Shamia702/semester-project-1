@@ -209,6 +209,10 @@ body {
         background-image: url("../images/index-header.jpg");
     }
 
+    .researchers-page .hero-section{
+        background-image: url("../images/researcher-header.jpg");
+    }
+
     
     .header-content{
        display: flex;
