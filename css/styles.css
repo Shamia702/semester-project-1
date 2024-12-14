@@ -593,20 +593,7 @@ h4{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-     /* footer styling starts from here */
+/* footer styling starts from here */
 
      footer {
         background-color: #432395; 
@@ -952,6 +939,10 @@ h4{
         , .researchers-content, .events-content{
             order: 2;
         }
+
+        .detail{
+            font-size: ;
+        }
     }
 
 
@@ -1190,6 +1181,29 @@ h4{
             margin: 0;
             padding-top: 5px;
         }
+
+        .visit-container{
+            height: auto;
+            margin: 50px 0px;
+            padding: 10px;
+         }
+         
+         .visit-box{
+             width: 70%;
+         }
+         
+         
+         .detail{
+             margin: 0px;
+             font-size: 13px;
+         }
+
+         .visit-text{
+            margin: 10px;
+            font-size: 13px;
+            
+         }
+        
     }
         
     
@@ -1197,220 +1211,7 @@ h4{
 
 
 
-    /* @media (min-width:300px) and (max-width:767px) {
-        body{
-            font-size: 14px;
-        }
-        .navbar{
-            padding: 10px;
-            z-index: 3;
-        }
-
-      .nav-links{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        position: fixed;
-        border-radius: 10px;
-        top: 0;
-        right: -100%;
-        z-index:100;
-        background-color: rgba(0, 0, 0, 0.425);
-        transition: all 0.2s ease-in-out;
-        padding: 10px;
-      }
-
-      .navbar-line {
-        display: none;
-    }
-
-    .logo{
-        width: 90px;
-        padding: 10px;
-     
-     } 
-
-      .nav-links li{
-        margin-top: 30px;
-
-      }
-
-      .nav-links li a{
-        padding: 5px
-      }
-
-    .menu-open {
-        display: block;
-    }
-
-    #menu-checkbox:checked ~ .nav-links{
-        right: 0;
-    }
-    
-    #menu-checkbox:checked ~  .menu-close {
-        display: block; 
-    }
-    
-    #menu-checkbox:checked ~ .menu-open {
-        display: none; 
-    }
-
-    .back-btn{
-        margin-top: 25px;
-    }
-
-    .header-content{
-        display: none;
-    }
-
-    .hero-cta{
-        display: none;
-    }
    
-
-    footer {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .hours, .policies {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .newsletter input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .newsletter button {
-        width: 100%;
-    }
-
-    
-    .hero-section {
-        height: 30vh;
-    }
-
-    .contact-form {
-        grid-template-columns: 1fr; 
-        gap: 0px;
-        padding: 0px;
-        max-width: 100%; 
-        margin: 20px; 
-        box-sizing: border-box; 
-       
-    }
-
-    .contact-us-form input, textarea {
-        width: 100%;
-        border-radius: 10px;
-        padding:9px 0px 10px 9px ;
-        border-radius: 10px;
-        margin:0;
-    } 
-    .submit-btn {
-        margin-left: 0px;
-    }
-
-
-    .contact-no{
-        margin: 0px;
-    }
-
-    h2{
-        margin-bottom: 15px;
-        font-size: 0.85rem;
-    }
-
-    h5{
-        font-size: 12px;
-        margin: 10px 0px;
-    }
-    
-    .contact-no{
-        margin: 0px;
-    }
-
-    .call-us{
-        margin: 0px;
-    }
-
-    .info-2{
-        margin-bottom: 5px;
-    }
-
-    .departments-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .visit-department,
-    .whats-here-department,
-    .become-member-department {
-        width: 100%;
-    }
-        .mission-container, 
-        .science-accessible-container, 
-        .kids-container, 
-        .teachers-container, 
-        .researchers-container {
-            flex-direction: column;
-            align-items: center;
-        } */
-    
-        /* .mission-content, 
-        .science-accessible-content, 
-        .kids-content, 
-        .teachers-content, 
-        .researchers-content{
-            order: 1; 
-            font-size: 1.2rem;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .mission-img, 
-        .science-img, 
-        .kids-img, 
-        .teachers-img, 
-        .researchers-img {
-            order: 2; 
-        margin-top: 20px; 
-        text-align: center;
-        }
-    
-        .mission-img img, 
-        .science-img img, 
-        .kids-img img, 
-        .teachers-img img, 
-        .researchers-img img {
-            max-width: 90%;
-        }
-
-        .wrapper {
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-    
-        .card {
-            width: 70%;
-            height: auto;
-        }
-    
-        .card img {
-            object-fit: cover;
-        }
-    }
-    
     
     
    
