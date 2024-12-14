@@ -202,7 +202,7 @@ body {
         color: white;
         justify-content: flex-start;
         margin: 40px;
-        z-index: 1; 
+        z-index: 2; 
     }
     
     h1{
@@ -270,6 +270,7 @@ body {
         align-items: center;
         justify-content: center;
         margin: 0 50px;
+        gap: 20px;
     }
 
     .visit-department, .whats-here-department,  .become-member-department{
@@ -281,7 +282,7 @@ body {
     .whats-here-img, .visit-img, .become-member-img{
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: center;
     }
 
     .text{
@@ -292,6 +293,7 @@ body {
        margin: 0 12px;
         color: #fff;
         font-size: 20px;
+        text-decoration: none;
         
     }
 
@@ -689,10 +691,451 @@ h4{
         color: #FF0000;
     }
 
+    @media (max-width: 768px) {
+        body{
+            font-size: 14px;
+        }
+        .navbar{
+            padding: 10px;
+            z-index: 3;
+        }
+
+      .nav-links{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        border-radius: 10px;
+        top: 0;
+        right: -100%;
+        z-index:100;
+        background-color: rgba(0, 0, 0, 0.425);
+        transition: all 0.2s ease-in-out;
+        padding: 10px;
+      }
+
+      .navbar-line {
+        display: none;
+    }
+
+    .logo{
+        width: 90px;
+        padding: 10px;
+     
+     } 
+
+      .nav-links li{
+        margin-top: 30px;
+
+      }
+
+      .nav-links li a{
+        padding: 5px
+      }
+
+    .menu-open {
+        display: block;
+    }
+
+    #menu-checkbox:checked ~ .nav-links{
+        right: 0;
+    }
+    
+    #menu-checkbox:checked ~  .menu-close {
+        display: block; 
+    }
+    
+    #menu-checkbox:checked ~ .menu-open {
+        display: none; 
+    }
+
+    .back-btn{
+        display: none;
+    }
+
+    .header-content{
+        display: none;
+    }
+
+    .hero-cta{
+        display: none;
+    }
+
+    .hero-section{
+        height: 27vh;
+    }
+    
+        h1 {
+            font-size: 6vmin; /* Smaller font for smaller screens */
+        }
+
+        .contact-form {
+            grid-template-columns: 1fr; /* Stack inputs on small screens */
+        }
+        
+        .contact-us-form input,
+        textarea {
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        .contact-no{
+            margin: 0px;
+        }
+
+        .footer-container {
+            grid-template-columns: 1fr; /* Stack all footer elements */
+        }
+    
+        .newsletter {
+            grid-column: span 1;
+        }
+        
+        .socialmedia-icons {
+            justify-content: center;
+        }
+    
+        .socialmedia-icons i {
+            font-size: 1.2rem;
+        }
+    
+        .copyright,
+        .policies {
+            font-size: 0.8rem;
+       
+        }
+        .departments-container {
+            flex-direction: column; /* Stack items vertically */
+            margin: 0 20px; /* Reduce margin */
+        }
+    
+        .visit-department, .whats-here-department, .become-member-department {
+            width: 70%; /* Full width with some padding */
+            height: 180px; /* Adjust height */
+        }
+    
+        .whats-here-img, .visit-img, .become-member-img {
+            object-fit: center; /* Ensure images fill properly */
+        }
+    
+        .text {
+            font-size: 16px; /* Reduce font size */
+            bottom: 25px; /* Adjust positioning */
+        }
+    
+        /* Section Containers */
+        .mission-container, 
+        .science-accessible-container, 
+        .kids-container, 
+        .teachers-container, 
+        .researchers-container, 
+        .exhibits-container, 
+        .events-container, 
+        .donate-container, 
+        .volunteer-container, 
+        .member-container {
+            flex-direction: column; /* Stack items */
+            width: 100%; /* Full width for smaller screens */
+            margin: 30px auto; /* Adjust spacing */
+        }
+    
+        /* Content Containers */
+        .mission-content, 
+        .science-accessible-content, 
+        .kids-content, 
+        .teachers-content, 
+        .researchers-content, 
+        .exhibits-content, 
+        .events-content, 
+        .donate-content, 
+        .member-content, 
+        .volunteer-content {
+            width: 90%; /* Full width */
+            margin: 10px 0; /* Reduce margin */
+            text-align: left; /* Center-align text */
+        }
+    
+        /* Images */
+        .mission-img, 
+        .science-img, 
+        .kids-img, 
+        .teachers-img, 
+        .researchers-img, 
+        .donate-img, 
+        .volunteer-img, 
+        .member-img {
+            width: 90%; /* Full width */
+            height: 100px; /* Reduce height */
+            margin-bottom: 15px; /* Add spacing below images */
+        }
+    
+        .mission-img img, 
+        .science-img img, 
+        .kids-img img, 
+        .teachers-img img, 
+        .researchers-img img, 
+        .donate-img img, 
+        .volunteer-img img, 
+        .member-img img {
+            object-fit: cover; /* Ensure proper fit */
+        }
+    
+        /* Call-to-action Buttons */
+        .cta-btn {
+            width: 90%; /* Full width */
+            font-size: 1rem; /* Adjust font size */
+            padding: 12px; /* Adjust padding */
+            margin: 10px auto; /* Center-align buttons */
+        }
+
+        .science-img, .volunteer-content, .member-content, .kids-content
+        , .researchers-content, .events-content{
+            order: 2;
+        }
+    }
+
+
+    @media (max-width: 480px) {
+
+        body{
+            font-size: 14px;
+        }
+        .navbar{
+            padding: 10px;
+            z-index: 3;
+        }
+
+      .nav-links{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        border-radius: 10px;
+        top: 0;
+        right: -100%;
+        z-index:100;
+        background-color: rgba(0, 0, 0, 0.425);
+        transition: all 0.2s ease-in-out;
+        padding: 10px;
+      }
+
+      .navbar-line {
+        display: none;
+    }
+
+    .logo{
+        width: 90px;
+        padding: 10px;
+     
+     } 
+
+      .nav-links li{
+        margin-top: 30px;
+
+      }
+
+      .nav-links li a{
+        padding: 5px
+      }
+
+    .menu-open {
+        display: block;
+    }
+
+    #menu-checkbox:checked ~ .nav-links{
+        right: 0;
+    }
+    
+    #menu-checkbox:checked ~  .menu-close {
+        display: block; 
+    }
+    
+    #menu-checkbox:checked ~ .menu-open {
+        display: none; 
+    }
+
+    .header-content{
+        display: none;
+    }
+
+    .hero-cta{
+        display: none;
+    }
+    
+        /* Further adjustments for very small screens */
+        .departments-container {
+            margin: 0 10px; /* Further reduce margin */
+            gap: 10px; /* Reduce gap */
+        }
+    
+        .visit-department, .whats-here-department, .become-member-department {
+            height: 150px; /* Further reduce height */
+        }
+    
+        .text {
+            font-size: 14px; /* Smaller font size */
+            bottom: 15px; /* Adjust positioning */
+        }
+    
+        .mission-container, 
+        .science-accessible-container, 
+        .kids-container, 
+        .teachers-container, 
+        .researchers-container, 
+        .exhibits-container, 
+        .events-container, 
+        .donate-container, 
+        .volunteer-container, 
+        .member-container {
+            width: 100%; /* Full width for small screens */
+            margin: 20px 0; /* Compact spacing */
+        }
+    
+        .mission-img, 
+        .science-img, 
+        .kids-img, 
+        .teachers-img, 
+        .researchers-img, 
+        .donate-img, 
+        .volunteer-img, 
+        .member-img {
+            height: 150px; /* Smaller height for images */
+        }
+    
+        .cta-btn {
+            font-size: 0.9rem; /* Adjust font size for buttons */
+            padding: 10px; /* Compact padding */
+        }
+
+        .footer {
+            padding: 15px 10px; 
+        }
+    
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px; 
+        }
+    
+        .line {
+            width: 100%;
+        }
+    
+        .newsletter {
+            text-align: center;
+        }
+    
+        .newsletter input {
+            width: 90%; 
+            margin: 10px 0;
+        }
+    
+        .newsletter button {
+            width: 90%; 
+        }
+    
+        .socialmedia-icons {
+            margin-left: 0; 
+            justify-content: center; 
+            gap: 15px;
+        }
+    
+        .support-us a,
+        .explore a {
+            margin: 10px 0;
+            font-size: 0.9rem; 
+        }
+    
+        .support-us p {
+            font-size: 1rem;
+        }
+    
+        .location,
+        .hours,
+        .copyright,
+        .policies {
+            font-size: 0.8rem; 
+            text-align: left;
+        }
+    
+        .footer {
+            padding: 15px 10px; 
+        }
+    
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px; 
+        }
+    
+        .line {
+            grid-column: unset;
+            width: 100%;
+        }
+    
+        .newsletter {
+            grid-column: unset;
+            text-align: center;
+        }
+    
+        .newsletter input {
+            width: 90%; 
+            margin: 10px 0;
+        }
+    
+        .newsletter button {
+            width: 90%; 
+        }
+    
+        .socialmedia-icons {
+            margin-left: 0; 
+            justify-content: center; 
+            gap: 15px;
+        }
+    
+        .support-us a,
+        .explore a {
+            margin: 10px 0;
+            font-size: 0.9rem; 
+        }
+    
+        .support-us p {
+            font-size: 1rem;
+        }
+    
+        .location,
+        .hours,
+        .copyright,
+        .policies {
+            font-size: 0.8rem; 
+            text-align: left;
+        }
+    
+        .hours, .policies {
+            grid-column: unset;
+            grid-row: unset;
+            position: unset;
+        }
+
+    
+        .copyright {
+            flex-direction: row;
+            gap: 10px; 
+        }
+    }
+        
+    
 
 
 
-    @media (min-width:300px) and (max-width:767px) {
+
+    /* @media (min-width:300px) and (max-width:767px) {
         body{
             font-size: 14px;
         }
@@ -822,7 +1265,7 @@ h4{
 
     h2{
         margin-bottom: 15px;
-        font-size: 0.95rem;
+        font-size: 0.85rem;
     }
 
     h5{
@@ -851,7 +1294,6 @@ h4{
     .whats-here-department,
     .become-member-department {
         width: 100%;
-        height: auto;
     }
         .mission-container, 
         .science-accessible-container, 
@@ -859,22 +1301,28 @@ h4{
         .teachers-container, 
         .researchers-container {
             flex-direction: column;
-            width: 100%;
-            gap: 20px;
-        }
+            align-items: center;
+        } */
     
-        .mission-content, 
+        /* .mission-content, 
         .science-accessible-content, 
         .kids-content, 
         .teachers-content, 
-        .researchers-content, 
+        .researchers-content{
+            order: 1; 
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 10px;
+        }
+
         .mission-img, 
         .science-img, 
         .kids-img, 
         .teachers-img, 
         .researchers-img {
-            width: 100%;
-            margin: 0;
+            order: 2; 
+        margin-top: 20px; 
+        text-align: center;
         }
     
         .mission-img img, 
@@ -882,7 +1330,7 @@ h4{
         .kids-img img, 
         .teachers-img img, 
         .researchers-img img {
-            height: auto;
+            max-width: 90%;
         }
 
         .wrapper {
@@ -940,10 +1388,10 @@ h4{
         .become-member-department {
             width: 45%;
         }
-    }
+    } */
     
-    /* For devices larger than 1024px (Desktops) */
-    @media (min-width: 1024px) {
+   
+    /* @media (min-width: 1024px) {
         .navbar {
             padding: 20px;
         }
@@ -967,7 +1415,7 @@ h4{
             width: 30%;
         }
     }
-    
+     */
         
     
     
