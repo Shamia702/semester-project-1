@@ -343,7 +343,8 @@ body {
 }
 h6{
     font-weight: 100;
-   margin: 0;    
+   margin-top: 0px;    
+   
 }
 
 p{
@@ -641,6 +642,10 @@ h4{
        font-size: medium;
     }
 
+    h5, h6{
+        margin: 0;
+    }
+
     
     
 
@@ -852,12 +857,16 @@ h4{
         .donate-content, 
         .member-content, 
         .volunteer-content {
-            width: 90%; /* Full width */
-            margin: 10px 0; /* Reduce margin */
-            text-align: left; /* Center-align text */
+            width: 90%; 
+            margin:0; 
+            text-align: left; 
+        }
+
+        h6,h5{
+            margin: 0;
         }
     
-        /* Images */
+       
         .mission-img, 
         .science-img, 
         .kids-img, 
@@ -866,9 +875,9 @@ h4{
         .donate-img, 
         .volunteer-img, 
         .member-img {
-            width: 90%; /* Full width */
-            height: 100px; /* Reduce height */
-            margin-bottom: 15px; /* Add spacing below images */
+            width: 90%; 
+            height: 100px;
+            margin-bottom: 15px; 
         }
     
         .mission-img img, 
@@ -879,15 +888,15 @@ h4{
         .donate-img img, 
         .volunteer-img img, 
         .member-img img {
-            object-fit: cover; /* Ensure proper fit */
+            object-fit: cover; 
         }
     
-        /* Call-to-action Buttons */
+       
         .cta-btn {
-            width: 90%; /* Full width */
-            font-size: 1rem; /* Adjust font size */
-            padding: 12px; /* Adjust padding */
-            margin: 10px auto; /* Center-align buttons */
+            width: 90%; 
+            font-size: 1rem; 
+            padding: 12px; 
+            margin: 10px auto; 
         }
 
         .science-img, .volunteer-content, .member-content, .kids-content
@@ -966,19 +975,18 @@ h4{
         display: none;
     }
     
-        /* Further adjustments for very small screens */
         .departments-container {
-            margin: 0 10px; /* Further reduce margin */
-            gap: 10px; /* Reduce gap */
+            margin: 0 10px; 
+            gap: 10px;
         }
     
         .visit-department, .whats-here-department, .become-member-department {
-            height: 150px; /* Further reduce height */
+            height: 150px;
         }
     
         .text {
-            font-size: 14px; /* Smaller font size */
-            bottom: 15px; /* Adjust positioning */
+            font-size: 14px;
+            bottom: 15px; 
         }
     
         .mission-container, 
@@ -991,8 +999,8 @@ h4{
         .donate-container, 
         .volunteer-container, 
         .member-container {
-            width: 100%; /* Full width for small screens */
-            margin: 20px 0; /* Compact spacing */
+            width: 100%;
+            margin: 50px 0; 
         }
     
         .mission-img, 
@@ -1003,12 +1011,12 @@ h4{
         .donate-img, 
         .volunteer-img, 
         .member-img {
-            height: 150px; /* Smaller height for images */
+            height: 150px; 
         }
     
         .cta-btn {
-            font-size: 0.9rem; /* Adjust font size for buttons */
-            padding: 10px; /* Compact padding */
+            font-size: 0.9rem; 
+            padding: 10px; 
         }
 
         .footer {
@@ -1358,85 +1366,4 @@ h4{
     
 
 
-    @media (min-width: 768px) and (max-width: 1023px) {
-
-        .navbar {
-            padding: 20px;
-        }
-    
-        .nav-links {
-            flex-direction: row;
-            justify-content: flex-start;
-            gap: 20px;
-        }
-    
-        .footer-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    
-        .contact-form {
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-    
-        .departments-container {
-            gap: 20px;
-        }
-    
-        .visit-department,
-        .whats-here-department,
-        .become-member-department {
-            width: 45%;
-        }
-    } */
-    
    
-    /* @media (min-width: 1024px) {
-        .navbar {
-            padding: 20px;
-        }
-    
-        .footer-container {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    
-        .contact-form {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-    
-        .departments-container {
-            gap: 30px;
-        }
-    
-        .visit-department,
-        .whats-here-department,
-        .become-member-department {
-            width: 30%;
-        }
-    }
-     */
-        
-    
-    
-
-   
-
-     /* @media (min-width: 400px) and (max-width:700px) {
-        .footer-container {
-            grid-template-columns: 2fr; 
-            gap: 20px; 
-        }
-    
-        .newsletter {
-            grid-column: span 1; 
-        }
-
-      
-    } 
-     */
-    
-    
-
-
-
