@@ -543,6 +543,55 @@ h4{
     object-fit: cover;
 }
    
+/* visit page styling */
+
+.visit-text{
+    margin: 30px 10px;
+    line-height: 1.5;
+}
+
+.visit-container{
+   display: flex;
+   flex-wrap: wrap; 
+   gap: 40px;
+   justify-content: center; 
+   align-items: center;
+   height: auto;
+   margin: 50px 0px;
+   padding: 10px;
+}
+
+.visit-box{
+    background-color: #fff;
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    height: 300px;
+    width: 330px;
+}
+
+.visit-box i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.96rem;
+    margin-top: 15px;
+}
+
+.detail{
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.opening-hours{
+    flex-direction: column;
+    gap: 4px;
+}
+
+.phone, .mail{
+    margin-top: 10px;
+}
+
+
 
 
 
@@ -773,11 +822,11 @@ h4{
     }
     
         h1 {
-            font-size: 6vmin; /* Smaller font for smaller screens */
+            font-size: 6vmin; 
         }
 
         .contact-form {
-            grid-template-columns: 1fr; /* Stack inputs on small screens */
+            grid-template-columns: 1fr; 
         }
         
         .contact-us-form input,
@@ -791,7 +840,7 @@ h4{
         }
 
         .footer-container {
-            grid-template-columns: 1fr; /* Stack all footer elements */
+            grid-template-columns: 1fr; 
         }
     
         .newsletter {
@@ -812,25 +861,25 @@ h4{
        
         }
         .departments-container {
-            flex-direction: column; /* Stack items vertically */
-            margin: 0 20px; /* Reduce margin */
+            flex-direction: column; 
+            margin: 0 20px; 
         }
     
         .visit-department, .whats-here-department, .become-member-department {
-            width: 70%; /* Full width with some padding */
-            height: 180px; /* Adjust height */
+            width: 70%; 
+            height: 180px; 
         }
     
         .whats-here-img, .visit-img, .become-member-img {
-            object-fit: center; /* Ensure images fill properly */
+            object-fit: center; 
         }
     
         .text {
-            font-size: 16px; /* Reduce font size */
-            bottom: 25px; /* Adjust positioning */
+            font-size: 16px; 
+            bottom: 25px;
         }
     
-        /* Section Containers */
+       
         .mission-container, 
         .science-accessible-container, 
         .kids-container, 
@@ -841,12 +890,12 @@ h4{
         .donate-container, 
         .volunteer-container, 
         .member-container {
-            flex-direction: column; /* Stack items */
-            width: 100%; /* Full width for smaller screens */
-            margin: 30px auto; /* Adjust spacing */
+            flex-direction: column; 
+            width: 100%; 
+            margin: 30px auto; 
         }
     
-        /* Content Containers */
+       
         .mission-content, 
         .science-accessible-content, 
         .kids-content, 
@@ -1135,6 +1184,11 @@ h4{
         .copyright {
             flex-direction: row;
             gap: 10px; 
+        }
+
+        h6,h5{
+            margin: 0;
+            padding-top: 5px;
         }
     }
         
