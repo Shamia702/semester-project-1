@@ -1,4 +1,4 @@
-![Screenshot](
+![Screenshot](./images/community-science-museum.jpg)
 
 # 🏛️ Community Science Museum
 
