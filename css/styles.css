@@ -289,26 +289,39 @@ body {
     font-weight: bold;
     color: #333;
     }
-    .departments-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 50px;
-        gap: 20px;
-    }
 
-    .visit-department, .whats-here-department,  .become-member-department{
-            width: 30%;
-            height: 200px;
-    }
+     .departments-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
 
 
-    .whats-here-img, .visit-img, .become-member-img{
-            width: 100%;
-            height: 100%;
-            object-fit: center;
-    }
 
+    .visit-department,
+.whats-here-department,
+.become-member-department {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 0 auto 20px auto;
+}
+
+.visit-img,
+.whats-here-img,
+.become-member-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
     .text{
        display: flex;
        align-items: flex-end;
@@ -366,7 +379,7 @@ body {
 
 }
 
-.mission-img, 
+/* .mission-img, 
 .science-img, 
 .kids-img, 
 .teachers-img, 
@@ -388,7 +401,40 @@ body {
     width: 100%;
     height: 100%; 
     object-fit: cover; 
+} */
+ .mission-img, 
+.science-img, 
+.kids-img, 
+.teachers-img, 
+.researchers-img,
+.donate-img,  
+.volunteer-img {
+    flex: 1;
+    max-width: 100%;     
+    aspect-ratio: 2 / 1;     
+    overflow: hidden;       
+    border-radius: 12px;   
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.mission-img img, 
+.science-img img, 
+.kids-img img, 
+.teachers-img img, 
+.researchers-img img, 
+.donate-img img, 
+.volunteer-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
 
 .cta-btn{
     display: flex;
